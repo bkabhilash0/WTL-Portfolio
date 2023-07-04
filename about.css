@@ -1,5 +1,10 @@
+.about-section{
+    grid-template-columns: repeat(8,1fr);
+}
+
 .image {
-  width: 370px;
+    grid-column: span 2;
+  /* width: 370px; */
   height: 361px;
   flex: none;
   padding: 24px;
@@ -11,10 +16,11 @@
   height: 100%;
   object-fit: cover;
   border-radius: 30px;
+  filter: brightness(0.6);
 }
 
 .right {
-  grid-column: span 3;
+  grid-column: 3/-1;
 }
 
 .section__heading {
@@ -58,7 +64,7 @@
 
 .experience {
   padding: 30px;
-  grid-column: span 2;
+  grid-column: span 4;
 }
 
 .experience h3 {
@@ -97,4 +103,9 @@
 
 .experience ul li:not(:first-child) {
   margin-top: 32px;
+}
+
+
+.collab{
+    grid-column: span 6;
 }
