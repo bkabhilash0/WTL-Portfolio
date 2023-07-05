@@ -412,3 +412,8 @@ body {
     transform: translateX(-65.3%);
   }
 }
+
+
+.header{
+  padding: 2rem;
+}
