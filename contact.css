@@ -1,0 +1,144 @@
+.contact__section {
+  padding-top: 80px;
+  display: grid;
+  gap: 24px;
+  grid-template-columns: 0.45fr 1fr;
+}
+
+.contact__info h3 {
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-bottom: 29px;
+}
+
+.contact-details li {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 55px;
+}
+
+.contact-details li:not(:first-child) {
+  margin-top: 70px;
+}
+
+.right span {
+  display: block;
+  color: #bcbcbc;
+  font-size: 14px;
+  opacity: 0.5;
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin-bottom: 7px;
+}
+
+.right h4 {
+  color: #ffffff;
+  font-size: 16px;
+  opacity: 0.8;
+  font-weight: 500;
+  margin-bottom: 7px;
+}
+
+.icon-box {
+  width: 68px;
+  height: 68px;
+  border-radius: 10px;
+  flex: none;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  color: #ffffff;
+}
+
+.icon-box::before {
+  border-radius: 10px;
+}
+
+.form {
+  padding: 40px;
+  grid-column: 2;
+  cursor: auto;
+}
+
+.form h1 {
+  font-size: 44px;
+  line-height: 52px;
+  font-weight: 500;
+  color: #fff;
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.form h1 span {
+  color: #5b78f6;
+}
+
+.form__field {
+  z-index: 999;
+}
+
+.form__field input,
+.form__field textarea {
+  font-family: "Inter", sans-serif;
+  outline: none;
+  border: none;
+  width: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.05),
+    rgba(255, 255, 255, 0.01)
+  );
+  border-radius: 10px;
+  padding: 17px 20px;
+  font-size: 14px;
+  display: block;
+  color: #fff;
+  resize: none;
+}
+
+.form .btn {
+  margin-top: 16px;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  padding: 16px 30px;
+}
+
+form {
+  position: relative;
+  z-index: 2;
+}
+
+.form__field:not(:first-child) {
+  margin-top: 16px;
+}
+
+.social {
+  display: flex;
+  gap: 20px;
+}
+
+.social a {
+  width: 82px;
+  height: 82px;
+  display: block;
+  text-align: center;
+  line-height: 92px;
+  color: #ffffff;
+  border-radius: 50%;
+  font-size: 32px;
+  transition: 0.3s;
+}
+
+.social a::before {
+  border-radius: 50%;
+}
+
+.social a:hover {
+  background: #ffffff;
+  color: #0f0f0f;
+}
