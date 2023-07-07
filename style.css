@@ -417,3 +417,7 @@ body {
 .header{
   padding: 2rem;
 }
+
+.about-btn{
+  z-index: 2;
+}
