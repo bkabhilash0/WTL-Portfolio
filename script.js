@@ -36,6 +36,7 @@ form.addEventListener("submit", async (e) => {
 
   submitBtn.innerText = "Send Message";
   submitBtn.disabled = false;
+  form.reset();
   toast.classList.add("active");
   toastProgress.style.animationDuration = "2000ms";
 
