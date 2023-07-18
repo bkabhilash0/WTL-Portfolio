@@ -16,9 +16,21 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="toast.css" />
     <title>Contact Me</title>
   </head>
   <body>
+    <div class="toast" id="toast">
+      <div class="toast__status-icon">
+        <img src="./assets/images/success.png" alt="Toast Status" />
+      </div>
+      <div class="toast__message">
+        <h3>Success</h3>
+        <p>Form Submitted Successfully!</p>
+      </div>
+      <p id="toast__exit">x</p>
+      <div class="toast__progress" id="toast-progress"></div>
+    </div>
     <header class="header container">
       <div class="logo">BK</div>
       <nav class="nav">
@@ -28,7 +40,7 @@
           <li><a href="contact.html" class="active">Contact</a></li>
         </ul>
       </nav>
-      <a class="btn">Let's Talk</a>
+      <a href="contact.html" class="btn" style="text-decoration: none;">Let's Talk</a>
     </header>
     <main>
       <section class="container contact__section">
@@ -63,9 +75,7 @@
               </div>
               <div class="right">
                 <span>Location</span>
-                <h4>
-                  Trivandrum <br />Kerala <br />India
-                </h4>
+                <h4>Trivandrum <br />Kerala <br />India</h4>
               </div>
             </li>
           </ul>
@@ -77,7 +87,11 @@
             <a href="#" class="shadow__box">
               <i class="iconoir-twitter"></i>
             </a>
-            <a href="https://www.instagram.com/iam__bk/" class="shadow__box" target="_blank">
+            <a
+              href="https://www.instagram.com/iam__bk/"
+              class="shadow__box"
+              target="_blank"
+            >
               <i class="iconoir-instagram"></i>
             </a>
           </div>
@@ -86,34 +100,37 @@
           <h1>Lets Work <span>Together</span></h1>
           <form>
             <div class="form__field">
-              <input type="text" placeholder="Name*" />
+              <input type="text" placeholder="Name*" required name="Name" />
             </div>
             <div class="form__field">
-              <input type="text" placeholder="Email*" />
+              <input type="text" placeholder="Email*" required name="Email" />
             </div>
             <div class="form__field">
-              <input type="text" placeholder="Your Subject*" />
+              <input
+                type="text"
+                placeholder="Your Subject*"
+                required
+                name="Subject"
+              />
             </div>
             <div class="form__field">
               <textarea
-                name="message"
+                name="Message"
                 id="message"
                 cols="30"
                 rows="10"
                 placeholder="Your Message*"
+                required
               ></textarea>
             </div>
-            <button class="btn">Send Message</button>
+            <button class="btn" id="submit_btn">Send Message</button>
           </form>
         </div>
       </section>
     </main>
     <footer class="container footer-area">
-      <a href="./index.html" class="logo">
-        <img
-          src="https://wpriverthemes.com/landing/gridx-html/assets/images/logo.svg"
-          alt="Logo"
-        />
+      <a href="./index.html" class="logo" style="text-decoration: none;">
+        <div class="logo">BK</div>
       </a>
       <ul class="footer-menu">
         <li><a href="index.html">Home</a></li>
@@ -132,5 +149,6 @@
         once: true,
       });
     </script>
+    <script src="./script.js"></script>
   </body>
 </html>
